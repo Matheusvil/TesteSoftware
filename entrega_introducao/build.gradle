@@ -29,4 +29,4 @@ dependencies {
 }
 
 // Define the main class for the application
-mainClassName = 'entrega_introducao.App'
+mainClassName = 'entrega_introducao.Calculadora'

@@ -4,8 +4,12 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class CalculadoraTeste {
+
+    //Função teste onde realiza uma das funções basicas e verifica e o valor bate. Definimos o valor no asserEquals, onde o primeiro valor é o resultado esperado e o segundo é o valor é o obtido
+
     @Test
     public void somarDoisValores() throws Exception {
+        //Adicionado a classe Calculadora no teste.
         Calculadora calculadora = new Calculadora();
         int valorA = 1;
         int valorB = 2;
@@ -31,6 +35,7 @@ public class CalculadoraTeste {
 
         assertEquals(3, divisao);
     }
+    //Função que raliza o tratamendo caso seja uma divisão por zero.
     @Test(expected = ArithmeticException.class)
     public void deveriaLancarUmaExcecaoIndicandoFalhaAoDividirUmNumeroPorZero()
             throws Exception {

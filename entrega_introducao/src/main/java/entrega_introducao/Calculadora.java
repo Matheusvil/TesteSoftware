@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Calculadora {
 
+    //Funções que realizam as contas basicas
     public int soma(int valorA, int valorB) {
         return valorA + valorB;
     }
@@ -20,6 +21,7 @@ public class Calculadora {
         return valorA * valorB;
     }
 
+    //Função main onde o usuário interage
     public static void main(String args[]) throws Exception {
         Calculadora calc = new Calculadora();
 

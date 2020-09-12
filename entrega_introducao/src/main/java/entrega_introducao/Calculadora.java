@@ -20,10 +20,10 @@ public class Calculadora {
         return valorA * valorB;
     }
 
-    public static void main(String args[]) {
+    public static void main(String args[]) throws Exception {
         Calculadora calc = new Calculadora();
 
-        int opc = 5;
+        int opc;
         int valorA, valorB;
 
         Scanner input = new Scanner(System.in);

@@ -3,6 +3,7 @@ package entrega_introducao;
 
 public class Calculadora {
 
+    //Funções que realizam as contas basicas
     public int soma(int valorA, int valorB) {
         return valorA + valorB;
     }

@@ -64,7 +64,7 @@ public class Calculadora {
 			System.out.println("Qual o segundo numero: ");  
             valorB = input1.nextInt();
 
-
+            //caso o valor de A ou B for menor que 0 ou mairo que 99 o usuário tem q digitar outro numero entre 0 e 99.
             if(valorA<0 || valorA>99 & valorB<0 || valorB>99){
                 System.out.println("Qual o primeiro numero: ");  
                 valorA = input1.nextInt();  
@@ -88,9 +88,16 @@ public class Calculadora {
                     break;  
                 }  
                 else{
-                    int operacao = calc.divide(valorA, valorB);  
-                    System.out.printf("\nO resultado da divisão é: %d\n", operacao);   
-                    break;  
+                    // caso o valor de B é igual qa zero o usuário precisa digitar novos valores.
+                    if (valorB == 0) {
+					System.out.printf("\nNão é possivel dividir por zero\n");
+					System.out.printf("\nSelecione outro valor\n");
+				    }
+				    else {
+					int operacao = calc.divide(valorA, valorB);  
+					System.out.printf("\nO resultado da divisão é: %d\n", operacao);   
+					break;
+				    }  
                 } 
             }
         }

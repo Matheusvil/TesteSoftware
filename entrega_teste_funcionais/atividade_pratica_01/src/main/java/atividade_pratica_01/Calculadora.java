@@ -7,7 +7,7 @@ public class Calculadora {
 
     //Funções que realizam as contas basicas e foi adicionado um limite para o usuário escolher um numero entre 0 e 99.
     public int soma(int valorA, int valorB) {
-        if(valorA<0 || valorA>99 & valorB<0 || valorB>99){
+        if(valorA<0 || valorA>99 | valorB<0 || valorB>99){
             return 0;
         }else{
             return Math.addExact(valorA, valorB);
@@ -88,7 +88,7 @@ public class Calculadora {
                     break;  
                 }  
                 else{
-                    // caso o valor de B é igual qa zero o usuário precisa digitar novos valores.
+                    // caso o valor de B é igual a zero o usuário precisa digitar novos valores.
                     if (valorB == 0) {
 					System.out.printf("\nNão é possivel dividir por zero\n");
 					System.out.printf("\nSelecione outro valor\n");

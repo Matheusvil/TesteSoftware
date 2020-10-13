@@ -15,7 +15,7 @@ public class Calculadora {
     }
 
     public int subtrai(int valorA, int valorB) {
-        if(valorA<0 || valorA>99 & valorB<0 || valorB>99){
+        if(valorA<0 || valorA>99 | valorB<0 || valorB>99){
             return 0;
         }else{
             return Math.subtractExact(valorA, valorB);
@@ -23,7 +23,7 @@ public class Calculadora {
     }
 
     public int divide(int valorA, int valorB) {
-        if(valorA<0 || valorA>99 & valorB<0 || valorB>99){
+        if(valorA<0 || valorA>99 | valorB<0 || valorB>99){
             return 0;
         }else{
             return valorA / valorB;
@@ -31,7 +31,7 @@ public class Calculadora {
     }
 
     public int multiplica(int valorA, int valorB) {
-        if(valorA<0 || valorA>99 & valorB<0 || valorB>99){
+        if(valorA<0 || valorA>99 | valorB<0 || valorB>99){
             return 0;
         }else{
             return Math.multiplyExact(valorA, valorB);
@@ -65,7 +65,7 @@ public class Calculadora {
             valorB = input1.nextInt();
 
             //caso o valor de A ou B for menor que 0 ou mairo que 99 o usuário tem q digitar outro numero entre 0 e 99.
-            if(valorA<0 || valorA>99 & valorB<0 || valorB>99){
+            if(valorA<0 || valorA>99 | valorB<0 || valorB>99){
                 System.out.println("Qual o primeiro numero: ");  
                 valorA = input1.nextInt();  
                 System.out.println("Qual o segundo numero: ");  

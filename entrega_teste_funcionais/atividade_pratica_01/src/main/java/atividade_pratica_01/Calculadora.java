@@ -1,7 +1,7 @@
 package atividade_pratica_01;
 
 import java.util.Scanner;
-import org.apache.commons.math3.*;
+import org.apache.commons.math3.util.FastMath;
 
 public class Calculadora {
 
@@ -10,7 +10,7 @@ public class Calculadora {
         if(valorA<0 || valorA>99 | valorB<0 || valorB>99){
             return 0;
         }else{
-            return Math.addExact(valorA, valorB);
+            return FastMath.addExact(valorA, valorB);
         }
     }
 
@@ -18,7 +18,7 @@ public class Calculadora {
         if(valorA<0 || valorA>99 | valorB<0 || valorB>99){
             return 0;
         }else{
-            return Math.subtractExact(valorA, valorB);
+            return FastMath.subtractExact(valorA, valorB);
         }
     }
 
@@ -34,7 +34,7 @@ public class Calculadora {
         if(valorA<0 || valorA>99 | valorB<0 || valorB>99){
             return 0;
         }else{
-            return Math.multiplyExact(valorA, valorB);
+            return FastMath.multiplyExact(valorA, valorB);
         }
     }
 
